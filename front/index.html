@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" type="text/css" href="style.css"/></head>
+    <script type="text/javascript" src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <title>THE JUNGLE</title>
+</head>
+<body>
+    <header>
+        <h1>The Jungle</h1>
+        <p>A la rencontre des tribus</p>
+    </header>
+    <main>
+        <!-- zone de connexion -->    
+        <form action="verification.php" method="POST">
+            <h2>Connexion</h2>
+            
+            <label><b>Nom d'utilisateur</b></label>
+            <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+
+            <label><b>Mot de passe</b></label>
+            <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+
+            <input type="submit" id='submit' value='LOGIN' >
+            <div class="container">
+                <div><a href="http://">forget password</a></div>
+                <div><a href="http://">Inscription</a></div>
+            </div>
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+</html>
