@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" type="text/css" href="styleInscription.css"/></head>
+    <script type="text/javascript" src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <title>Inscription</title>
+</head>
+<body>
+    <header>
+        <h1>The Jungle</h1>
+        <p>A la rencontre des tribus</p>
+    </header>
+    <section class="nav">
+        <p>Formulaire d'inscription</p>
+    </section>
+    <section class="fond">
+        <main>
+            <form action="inscription" method="POST">
+            
+                <label for="nom">Nom</label>
+                <input id="nom" name="nom" type="text" required>
+
+                <label for="prenom">Prénom </label>
+                <input id="prenom" name="prenom" type="text" required>
+
+                <label for="date-de-naissance">Date de naissance</label>
+                <input id="date-de-naissance" placeholder="jj/mm/aaaa" name="date-de-naissance" type="date" required >
+        
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="exemple@email.com" required>
+
+                <label>Mot de passe</label>
+                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+
+                <p><input type="submit" id="inscription" value="Soummettre"></p>
+            </form>
+        </main>
+    </section>
+    
+    <footer>
+        <p>Copyright vicky - Tous droits réservés<br />
+    </footer> 
+</body>
+</html>

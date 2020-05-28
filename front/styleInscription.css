@@ -4,13 +4,12 @@ body{
     background-position:100% 0%;
     font-family: 'Raleway', sans-serif;
 }
-/* entete*/
 header{
     color: #ffffff;
     background-color: #006600ec;
     text-align: center;
     padding: 10px;
-    margin-top: 0px;
+    margin: 0px;
 }
 header h1{
     font-family: 'Lobster', cursive;
@@ -22,35 +21,47 @@ header p{
     font-size: 25px;
     margin-top: -5px;
 }
-/*contenu */
+/*contenu formulaire*/
+.fond{
+    width: 100%; 
+    padding: 10px 0 10px 0;
+    justify-content: center;
+    background-color: #ffffffab;
+}
 main{
-    width:400px;
+    width:60%;
     margin:0 auto;
-    margin-top:5%;
+    
 }
 form {
     width:100%;
-    padding: 30px;
+    padding:10px 20px 0 20px;
     border: 1px solid #f1f1f1;
     background: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-/* taille des inputs */
-input[type=text], input[type=password] {
+.nav{
+    background-color: #648b6498;
+    display: flex;
+    justify-content: center;   
+}
+.nav p{
+    margin: 10px;
+    color: #ffffff;
+}
+input[type=text], input[type=password], input[type=email],  input[type=date]{
     width: 100%;
-    padding: 12px 20px;
+    padding: 3px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-
 /* style du bouton */
 input[type=submit] {
     background-color: #006600;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -59,16 +70,6 @@ input[type=submit]:hover {
     background-color: white;
     color: #006600;
     border: 1px solid #006600;
-}
-.container{
-    text-align: center;
-    flex-direction: column;
-}
-.container div{
-    padding: 5px;
-}
-a{
-    color: #006600;
 }
 /*bas de page*/
 footer{
