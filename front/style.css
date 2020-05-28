@@ -72,8 +72,8 @@ a{
 }
 /*bas de page*/
 footer{
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    margin-bottom: 0;
     width: 100%;
     color: #ffffff;
     text-align: right;

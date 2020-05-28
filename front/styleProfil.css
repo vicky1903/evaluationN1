@@ -34,7 +34,7 @@ a{
 }
 .container{
     width: 100%; 
-    padding: 20px;
+    padding: 20px 0 20px 0;
     display: flex;
     justify-content: center;
     background-color: #ffffffe0;
@@ -53,8 +53,8 @@ h1, h3{
 
 /*bas de page*/
 footer{
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    margin-bottom: 0;
     width: 100%;
     color: #ffffff;
     text-align: right;
