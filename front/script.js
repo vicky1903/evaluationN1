@@ -71,7 +71,7 @@ check['pwd'] = function() {
 
 (function() { // Utilisation d'une IIFE pour éviter les variables globales.
 
-    var myForm = document.getElementById('connexion'),
+    var button = document.getElementById('button'),
         inputs = document.querySelectorAll('input[type=email], input[type=password]'),
         inputsLength = inputs.length;
 
@@ -79,9 +79,9 @@ check['pwd'] = function() {
         inputs[i].addEventListener('keyup', function(e) {
             check[e.target.id](e.target.id); // "e.target" représente l'input actuellement modifié
         });
-    }
+    };
 
-    myForm.addEventListener('submit', function(e) {
+    button.addEventListener('click', function() {
 
         var result = true;
 
