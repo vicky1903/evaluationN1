@@ -3,6 +3,7 @@ body{
     background-image: url(pictures/jungle2.jpg);
     background-position:100% 0%;
 }
+/* entete*/
 header{
     color: #ffffff;
     background-color: #006600ec;
@@ -20,6 +21,7 @@ header p{
     font-size: 25px;
     margin-top: -5px;
 }
+/*contenu */
 main{
     width:400px;
     margin:0 auto;
@@ -33,7 +35,7 @@ form {
     background: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-/* Full-width inputs */
+/* taille des inputs */
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -43,7 +45,7 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
+/* style du bouton */
 input[type=submit] {
     background-color: #006600;
     color: white;
@@ -67,4 +69,13 @@ input[type=submit]:hover {
 }
 a{
     color: #006600;
+}
+/*bas de page*/
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    padding-top:50px;
+    height:50px;
 }
