@@ -35,7 +35,12 @@
                 <input id="email" type="email" placeholder="exemple@email.com" required>
 
                 <label>Mot de passe</label>
-                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+                <input type="password" id="pdw1" placeholder="Entrer le mot de passe" name="pdw1" required>
+                <span class="tooltip">Le mot de passe ne doit pas faire moins de 6 caractères</span>
+
+                <label>Mot de passe (confirmation)</label>
+                <input type="password" id="pdw2" placeholder="Entrer le mot de passe" name="pdw2" required>
+                <span class="tooltip">Le mot de passe de confirmation doit être identique à celui d'origine</span>
 
                 <p><input type="submit" id="inscription" value="Soummettre"></p>
             </form>
