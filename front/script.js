@@ -33,6 +33,7 @@ var mdpFormat = /^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9]).*$/;
 
 var check = {}; // On met toutes nos fonctions dans un objet littéral
 
+//chec page connexion
 check['login'] = function() {
 
     var login = document.getElementById('login'),
@@ -49,7 +50,6 @@ check['login'] = function() {
     }
 
 };
-
 check['pwd'] = function() {
 
     var pwd = document.getElementById('pwd'),
@@ -69,11 +69,9 @@ check['pwd'] = function() {
 
 // Mise en place des événements
 
-(function() { // Utilisation d'une IIFE pour éviter les variables globales.
-
-    var button = document.getElementById('button'),
-        inputs = document.querySelectorAll('input[type=email], input[type=password]'),
-        inputsLength = inputs.length;
+    var button = document.getElementById('button');
+    var inputs = document.querySelectorAll('input[type=email], input[type=password]');
+    var inputsLength = inputs.length;
 
     for (var i = 0; i < inputsLength; i++) {
         inputs[i].addEventListener('keyup', function(e) {
@@ -81,7 +79,7 @@ check['pwd'] = function() {
         });
     };
 
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function(e) {
 
         var result = true;
 
@@ -94,9 +92,7 @@ check['pwd'] = function() {
         }
 
         e.preventDefault();
-
     });
-})();
 
 
 // Maintenant que tout est initialisé, on peut désactiver les "tooltips"
