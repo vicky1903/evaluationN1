@@ -88,7 +88,7 @@ check['pwd'] = function() {
         }
 
         if (result) {
-            //lien vers profil
+           //mettre lienvers profil
         }
 
         e.preventDefault();
